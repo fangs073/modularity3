@@ -1,0 +1,67 @@
+form {
+	/*text-align: right;*/
+}
+
+.input-div {
+	position: relative;
+	margin-top: 10px;
+	width: 100%;
+	margin:auto;
+	text-align: center;
+}
+
+.input-div input {
+	width: 30%;
+	/*margin-right: 20%;*/
+	margin-top: 20px;
+	/*border: 1px solid black;*/
+}
+
+.input-div input.state {
+	width: 5%;
+}
+
+.input-div input.city {
+	width: 13%;
+	margin: auto;
+}
+
+.input-div label {
+	display: inline-block;
+	width: 80px;
+	text-align: right;
+}
+
+/*.input-div input:last-child {
+	margin-right: 20%;
+}*/
+
+.checkbox-div {
+	margin-top: 10px;
+}
+
+.checkbox-div label {
+	margin-right: 30%;
+	width: 58%;
+}
+
+.checkbox-div input.checkbox {
+	margin:	0;
+	width: 20px;
+}
+
+.form-button {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+}
+
+.is-valid, .is-invalid {
+	position: absolute;
+	left: 72%;
+	top: 50%;
+}
+
+.is-valid {
+	color: #2ecc71;
+}
