@@ -173,6 +173,7 @@ form {
 .chunky-header {
 	padding: 1%;
 	border: 1px black solid;
+	background: #ecf0f1;
 }
 
 .chunky-header h3 {
