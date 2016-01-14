@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="framework.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://octicons.github.com/octicons-logos/octicons-logos.css">
   </head>
   <body>
   	<div class="instructions-container">
@@ -82,7 +83,7 @@
             <form>
               <div class="input-div">
                 <label>First Name</label>
-                <input type="text" name="firstName" value="Pascal">
+                <input class="valid-form" type="text" name="firstName" value="Pascal">
                 <span class="is-valid">✓</span>
               </div>
               <div class="input-div">
@@ -91,7 +92,7 @@
               </div>
               <div class="input-div">
                 <label>Email</label>
-                <input type="email" name="email" value="myemail@something">
+                <input class="invalid-form" type="email" name="email" value="myemail@something">
                 <span class="is-invalid">Please enter a valid value.</span>
               </div>
             </form>
@@ -105,12 +106,12 @@
           <p class="instruction-text">The textbox should be fluid, i.e. stretch to fit the available space when the window changes size. <em>Hint: Look up 3-column layouts with fluid center.</em></p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
-              <label>Find groups</label>
-              <div>
-                <input placeholder="Find Groups by Title or Description">
+            <div class="search-bar-container">
+              <label class="search-title">Find groups</label>
+              <div class="search-form-container">
+                <input class="search-form" placeholder="Find Groups by Title or Description">
               </div>
-              <input type="submit">
+              <input class="search-button" type="submit">
             </div>
             <!-- End editable area -->
           </div>
@@ -122,7 +123,7 @@
           <p class="instruction-text">Create a textbox which can display multiple "tags" as there are entered.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
+            <div class="omnibox">
               <ul><li><a href="#">x</a>Date: Yesterday</li><li><a href="#">x</a>Label: Notes</li></ul>
               <input type="text" placeholder="Enter more terms">
             </div>
@@ -136,81 +137,81 @@
           <p class="instruction-text">Create a list of items that have multiple pieces of data per row, including an icon, title, description, and favorited count.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <div>
-              <div>
+            <div class="chunky">
+              <div class="chunky-header">
                 <h3>Public repositories</h3>
               </div>
-              <ul>
-                <li >
-                  <a href="http://github.com/visionmedia/express" target="_blank">
-                    <div>
-                      <div>9,972</div>
-                      <div>
-                        <div></div>
+              <ul class="chunky-ul">
+                <li class="chunky-row">
+                  <a class="chunky-link" href="http://github.com/visionmedia/express" target="_blank">
+                    <div class="chunky-content">
+                      <div class="chunky-favorite-count">9,972</div>
+                      <div class="chunky-icon-container">
+                        <div class="chunky-favorite-icon"></div>
                       </div>
-                      <div>
-                        <div>express</div>
-                        <p title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li>
-                  <a href="http://github.com/visionmedia/jade" target="_blank">
-                    <div>
-                      <div>4,854</div>
-                      <div>
-                        <div></div>
-                      </div>
-                      <div>
-                        <div>jade</div>
-                        <p title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                      <div class="chunky-project-container">
+                        <div class="chunky-project-title">express</div>
+                        <p class="chunky-project-description" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li>
-                  <a href="http://github.com/visionmedia/mocha" target="_blank">
-                    <div>
-                      <div>2,954</div>
-                      <div>
-                        <div></div>
+                <li class="chunky-row">
+                  <a class="chunky-link" href="http://github.com/visionmedia/jade" target="_blank">
+                    <div class="chunky-content">
+                      <div class="chunky-favorite-count">4,854</div>
+                      <div class="chunky-icon-container">
+                        <div class="chunky-favorite-icon"></div>
                       </div>
-                      <div>
-                        <div>mocha</div>
-                        <p title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
-                      </div>
-                    </div>
-                  </a>
-                </li>
-
-                <li >
-                  <a href="http://github.com/visionmedia/get-extras" target="_blank">
-                    <div>
-                      <div>2,342k</div>
-                      <div>
-                        <div></div>
-                      </div>
-                      <div>
-                        <div>git-extras</div>
-                        <p title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                      <div class="chunky-project-container">
+                        <div class="chunky-project-title">jade</div>
+                        <p class="chunky-project-description" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
                       </div>
                     </div>
                   </a>
                 </li>
 
-                <li >
-                  <a href="http://github.com/visionmedia/uikit" target="_blank">
-                    <div>
-                      <div>1,183</div>
-                      <div>
-                        <div></div>
+                <li class="chunky-row">
+                  <a class="chunky-link" href="http://github.com/visionmedia/mocha" target="_blank">
+                    <div class="chunky-content">
+                      <div class="chunky-favorite-count">2,954</div>
+                      <div class="chunky-icon-container">
+                        <div class="chunky-favorite-icon"></div>
                       </div>
-                      <div>
-                        <div>uikit</div>
-                        <p title="modern ui components for the modern web">modern ui components for the modern web</p>
+                      <div class="chunky-project-container">
+                        <div class="chunky-project-title">mocha</div>
+                        <p class="chunky-project-description" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-row">
+                  <a class="chunky-link" href="http://github.com/visionmedia/get-extras" target="_blank">
+                    <div class="chunky-content">
+                      <div class="chunky-favorite-count">2,342k</div>
+                      <div class="chunky-icon-container">
+                        <div class="chunky-favorite-icon"></div>
+                      </div>
+                      <div class="chunky-project-container">
+                        <div class="chunky-project-title">git-extras</div>
+                        <p class="chunky-project-description" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="chunky-row">
+                  <a class="chunky-link" href="http://github.com/visionmedia/uikit" target="_blank">
+                    <div class="chunky-content">
+                      <div class="chunky-favorite-count">1,183</div>
+                      <div class="chunky-icon-container">
+                        <div class="chunky-favorite-icon"></div>
+                      </div>
+                      <div class="chunky-project-container">
+                        <div class="chunky-project-title">uikit</div>
+                        <p class="chunky-project-description" title="modern ui components for the modern web">modern ui components for the modern web</p>
                       </div>
                     </div>
                   </a>
@@ -230,95 +231,95 @@ UIKit - modern ui components for the modern web-->
           <p class="instruction-text">What if we used a table for the markup instead? Style it the same as above. You should be able to use <em>nearly 100%</em> of the same classes.</p>
           <div class="instruction-answer">
             <!-- Edit here -->
-            <table>
-              <thead>
-                <tr>
-                  <th>
+            <table class="chunky">
+              <thead >
+                <tr >
+                  <th class="chunky-header">
                     <h3>Public repositories</h3>
                   </th>
                 </tr>
               </thead>
               <tbody>
 
-                <tr >
+                <tr class="chunky-row">
                   <td>
-                    <a href="http://github.com/visionmedia/express" target="_blank">
-                      <div>
-                        <div>9,972</div>
-                        <div>
-                          <div></div>
+                    <a class="chunky-link" href="http://github.com/visionmedia/express" target="_blank">
+                      <div class="chunky-content">
+                        <div class="chunky-favorite-count">9,972</div>
+                        <div class="chunky-icon-container">
+                          <div class="chunky-favorite-icon"></div>
                         </div>
-                        <div>
-                          <div>express</div>
-                          <p title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
+                        <div class="chunky-project-container">
+                          <div class="chunky-project-title">express</div>
+                          <p class="chunky-project-description" title="Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple">Sinatra inspired web development framework for node.js -- insanely fast, flexible, and simple</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-row">
                   <td>
-                    <a href="http://github.com/visionmedia/jade" target="_blank">
-                      <div>
-                        <div>4,854</div>
-                        <div>
-                          <div></div>
+                    <a class="chunky-link" href="http://github.com/visionmedia/jade" target="_blank">
+                      <div class="chunky-content">
+                        <div class="chunky-favorite-count">4,854</div>
+                        <div class="chunky-icon-container">
+                          <div class="chunky-favorite-icon"></div>
                         </div>
-                        <div>
-                          <div>jade</div>
-                          <p title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
+                        <div class="chunky-project-container">
+                          <div class="chunky-project-title">jade</div>
+                          <p class="chunky-project-description" title="robust, elegant, feature rich template engine for nodejs">robust, elegant, feature rich template engine for nodejs</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-row">
                   <td>
-                    <a href="http://github.com/visionmedia/mocha" target="_blank">
-                      <div>
-                        <div>2,954</div>
-                        <div>
-                          <div></div>
+                    <a class="chunky-link" href="http://github.com/visionmedia/mocha" target="_blank">
+                      <div class="chunky-content">
+                        <div class="chunky-favorite-count">2,954</div>
+                        <div class="chunky-icon-container">
+                          <div class="chunky-favorite-icon"></div>
                         </div>
-                        <div>
-                          <div>mocha</div>
-                          <p title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
+                        <div class="chunky-project-container">
+                          <div class="chunky-project-title">mocha</div>
+                          <p class="chunky-project-description" title="simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)">simple, flexible, fun javascript test framework for node.js &amp; the browser. (BDD, TDD, QUnit styles via interfaces)</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-row">
                   <td>
-                    <a href="http://github.com/visionmedia/get-extras" target="_blank">
-                      <div>
-                        <div>2,342k</div>
-                        <div>
-                          <div></div>
+                    <a class="chunky-link" href="http://github.com/visionmedia/get-extras" target="_blank">
+                      <div class="chunky-content">
+                        <div class="chunky-favorite-count">2,342k</div>
+                        <div class="chunky-icon-container">
+                          <div class="chunky-favorite-icon"></div>
                         </div>
-                        <div>
-                          <div>git-extras</div>
-                          <p title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
+                        <div class="chunky-project-container">
+                          <div class="chunky-project-title">git-extras</div>
+                          <p class="chunky-project-description" title="repo summary, repl, changelog population, author commit percentages and more">repo summary, repl, changelog population, author commit percentages and more</p>
                         </div>
                       </div>
                     </a>
                   </td>
                 </tr>
 
-                <tr >
+                <tr class="chunky-row">
                   <td>
-                    <a href="http://github.com/visionmedia/uikit" target="_blank">
-                      <div>
-                        <div>1,183</div>
-                        <div>
-                          <div></div>
+                    <a class="chunky-link" href="http://github.com/visionmedia/uikit" target="_blank">
+                      <div class="chunky-content">
+                        <div class="chunky-favorite-count">1,183</div>
+                        <div class="chunky-icon-container">
+                          <div class="chunky-favorite-icon"></div>
                         </div>
-                        <div>
-                          <div>uikit</div>
-                          <p title="modern ui components for the modern web">modern ui components for the modern web</p>
+                        <div class="chunky-project-container">
+                          <div class="chunky-project-title">uikit</div>
+                          <p class="chunky-project-description" title="modern ui components for the modern web">modern ui components for the modern web</p>
                         </div>
                       </div>
                     </a>
